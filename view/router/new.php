@@ -22,12 +22,10 @@
     <div>
         <div>
             <input type="text" placeholder="Nome do Roteriro" name="txtName">
-        </div>
-        <div>
             <input type="text" placeholder="Descrição" name="txtDescription">
         </div>
     </div>
     <div>
-        <input type="submit" value="Enviar" class="btn btn-primary" name="btnEnviar">
+        <button type="submit" class="btn btn-primary" name="btnEnviar"> Cadastrar</button>
     </div>
 </form>
