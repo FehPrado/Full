@@ -13,21 +13,21 @@
 
             <tr>
 
-                <th>Nome do Roteiro</th>
+                <th class="px-4">Nome do Roteiro</th>
+
                 <th>Descrição</th>
 
             </tr>
 
         </thead>
+
         <tbody>
 
-            <?php
-                include('config/conecta.php');
-                $query = mysqli_query($conecta, "SELECT * FROM router ORDER BY name") or die(mysqli_error());
-            ?>
+            <tr>
+            </tr>
 
         </tbody>
-
+        
     </table>
 
 </div>
