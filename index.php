@@ -6,7 +6,10 @@ define('HOST', 'http://localhost:8001/');
 
 $routes = [
     '/oi' => 'view/oi.php',
-    '/router' => '/view/router/index.php'
+    '/router' => 'view/router/index.php',
+    '/router-new' => 'view/router/new.php',
+    '/router-show' => 'view/router/show.php'
+
 ];
 require($sidebar);
 
