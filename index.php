@@ -1,16 +1,27 @@
 <?php
 include('complements.php');
 
-define('HOST', 'http://localhost:8001/');
+define('HOST', 'http://localhost:8000/');
 // define('HOST', 'http://fb.com/');
 
+function path ($path) {
+    echo HOST . $path;
+}
+
 $routes = [
-    '/oi' => 'view/oi.php',
     '/router' => 'view/router/index.php',
     '/router-new' => 'view/router/new.php',
-    '/router-show' => 'view/router/show.php'
+    '/router-show' => 'view/router/show.php',
+    '/router-destroy' => 'view/router/destroy.php',
 
 ];
+
+// if($routes == 'router-destroy'){
+//     echo ('olá');
+// }
+
+$parms = $_REQUEST;
+
 require($sidebar);
 
 
