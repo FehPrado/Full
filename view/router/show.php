@@ -44,7 +44,7 @@ include('config/conecta.php');
                                         Alterar
                                     </a>
                                 </li>
-                                <li><a href="<?php path("router-destroy?idrouter=" . $rshow['idrouter']) ?>" onclick="if (!confirm('confirma a exclusão')){ return false }"> Remover </a></li>
+                                <li><a href="<?php path("router-destroy?idrouter=" . $rshow ['idrouter'] ) ?>" onclick="if (!confirm('confirma a exclusão')){ return false }"> Remover </a></li>
                             </ul>
                         </div>
                     </td>

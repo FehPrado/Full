@@ -2,19 +2,20 @@
 
 include('config/conecta.php');
 
-$query = mysqli_query($conecta, "DELETE FROM router WHERE idrouter = " . $_GET['idrouter']);
+$protocolo = (isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS']=="on") ? "https" : "http");
+$url = '://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+
+$cap = (parse_url($url, PHP_URL_QUERY));
+
+$query = mysqli_prepare($conecta, "DELETE FROM router WHERE idrouter = " . base64_decode($_GET['$cap']));
 
 
 
-// $query = mysqli_query($conecta, "DELETE FROM itinerary WHERE id = " . base64_decode($_GET["id"]));
 
-if($query) {
-	$type = base64_encode("alert-success");
-	$msg = base64_encode("Roteiro removido com sucesso!");
-} else {
-	$type = base64_encode("alert-danger");
-	$msg = base64_encode("Falha ao tentar remover o roteiro!");
-}
+
+
 
 ?>
-oi
+
+<br><br>
+ajbfiausuiaekjdagfuadkasdnasbngvuasbdgiadsbkgjasdiugb

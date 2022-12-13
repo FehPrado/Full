@@ -14,10 +14,10 @@ $routes = [
     '/router-show' => 'view/router/show.php',
     '/router-destroy' => 'view/router/destroy.php',
 
+
+
 ];
 
-
-$parms = $_REQUEST;
 
 require($sidebar);
 
