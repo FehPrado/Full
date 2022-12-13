@@ -17,10 +17,8 @@
         //     '" . (trim($_POST['txtDescription'])) . "' 
         //     )"
         // );
-     
-    }else{
-
     }
+
 ?>
 
 
@@ -29,8 +27,8 @@
 <form method="post">
     <div>
         <div>
-            <input value="<?php echo $prep['name'] ?>" type="text" placeholder="Nome do Roteriro" name="txtName">
-            <input value="<?php echo $prep['description'] ?>" type="text" placeholder="Descrição" name="txtDescription">
+            <input type="text" placeholder="Nome do Roteriro" name="txtName">
+            <input type="text" placeholder="Descrição" name="txtDescription">
         </div>
     </div>
     <div>

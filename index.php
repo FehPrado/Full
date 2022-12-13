@@ -16,9 +16,6 @@ $routes = [
 
 ];
 
-// if($routes == 'router-destroy'){
-//     echo ('olá');
-// }
 
 $parms = $_REQUEST;
 
