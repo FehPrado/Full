@@ -1,6 +1,5 @@
 <?php
     include('config/conecta.php');
-    ob_start();
 
     if(isset($_POST['btnEnviar'])){
         
