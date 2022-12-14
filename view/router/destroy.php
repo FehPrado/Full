@@ -4,7 +4,7 @@ include('config/conecta.php');
 
 
 
-$query = mysqli_prepare($conecta, "DELETE FROM router WHERE idrouter = " . base64_decode($_GET['$cap']));
+$query = mysqli_prepare($conecta, "DELETE FROM router WHERE idrouter = " . base64_decode($_GET['?idrouter=9']));
 
 
 
@@ -15,3 +15,4 @@ $query = mysqli_prepare($conecta, "DELETE FROM router WHERE idrouter = " . base6
 ?>
 
 
+fdgdfgdfg

@@ -12,7 +12,8 @@ $routes = [
     '/router' => 'view/router/index.php',
     '/router-new' => 'view/router/new.php',
     '/router-show' => 'view/router/show.php',
-    '/router-destroy{$url}' => 'view/router/destroy.php',
+    '/router-destroy' => 'view/router/destroy.php',
+
 
 ];
 
