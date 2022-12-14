@@ -3,12 +3,12 @@
 
     if(isset($_POST['btnEnviar'])){
         
-        //insert(julio)
+
         $prep = mysqli_prepare($conecta, "INSERT INTO router (name, description) VALUES (?, ?);");
         $prep->bind_param("ss", trim($_POST['txtName']), trim($_POST['txtDescription']));
         $prep->execute();
 
-        //insert(felipe)
+
         // mysqli_query($conecta, "INSERT INTO router
         // (name, description)
         // VALUES(
